@@ -277,7 +277,7 @@ class SimpleTokenizer():
           <ImageBlock src={bytepair} alt="" caption="Overview of Byte Pair Tokenizer" width='70%'></ImageBlock>
           <p>Byte Pair Encoding can efficiently handle unknown words, rare words and subwords without requiring every possible word to be in vocabulary.A custom word-level tokenizer would need a huge vocab and would produce many out-of-vocabulary tokens.</p>
           <p><span className='highlight'>Byte Pair tokenizer</span> was used to train LLMs such as GPT-2, GPT-3, and the original model use in ChatGPT. <span className='highlight'>ticktoken</span> library helps us apply Byte Pair tokenization therefore we will tokenize the text using ticktoken.
-          Since the ticktoken has several tokanizations we will be using the <span className='highlight'>"gpt2"</span> which has vocab size of 50,258. By this we mean "ticktoken gpt2" can encode around 50,258 unique words.
+          Since the ticktoken has several tokenizations we will be using the <span className='highlight'>"gpt2"</span> which has vocab size of 50,258. By this we mean "ticktoken gpt2" can encode around 50,258 unique words.
           </p>
           <CodeSnippet language='PY' title="Creating tokenizer">
             {`import tiktoken
